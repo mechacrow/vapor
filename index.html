@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>relax.jpg</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<!-- FONT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    
+<!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+<!-- Favicon
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="#">
+
+</head>
+<body class="main">
+<!-- main
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="container">
+    <div class="row">
+    <h1>寛ぐ</h1>
+    
+    <audio src="" preload="auto" loop="loop" id="player"/>
+        
+    </div>
+        
+    <div class="image_container" id="img-border">
+    <img id="image" /></div>
+   
+    <p id="source"><a href="source.html">音楽</a></p>
+        
+</div><!-- container -->
+
+<!-- random img javascript
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="js/audiojs/audio.js"></script>
+<script>
+    
+// img
+var description = [
+    "./img/drink.gif",
+    "./img/daytrain.gif",
+    "./img/gokudolphin.gif",
+    "./img/magicword.gif",
+    "./img/road.gif",
+    "./img/sailormoonpencil.gif",
+    "./img/sailormoonsleep.gif",
+    "./img/springtrain.gif",
+    "./img/vapor.gif",
+    "./img/train.gif",
+    "./img/uydance.gif",
+    "./img/uyfly.gif",
+    "./img/dolphin.gif",
+    "./img/rain.gif",
+    "./img/pc.gif",
+    "./img/power.gif",
+    "./img/vhs.gif",
+    "./img/raw.gif",
+    "./img/animevhs.gif",
+    "./img/coke.gif"
+];
+
+var size = description.length
+var x = Math.floor(size*Math.random())
+document.getElementById('image').src=description[x];
+    
+// mp3
+var description = [
+    "./mp3/HOME%20-%20Resonance.mp3",
+    "./mp3/CR%C3%86TION%20-%20memory.mp3",
+    "./mp3/01%20B__%20Start%20Up.mp3",
+    "./mp3/affection..mp3",
+    "./mp3/BABYBABY%E3%81%AE%E5%A4%A2.mp3",
+    "./mp3/Decay.mp3",
+    "./mp3/Her.mp3",
+    "./mp3/I%20Can't%20Think%20When%20I%20Talk%20To%20You.mp3",
+    "./mp3/mac420.mp3",
+    "./mp3/oh...%20Hello.mp3"
+];
+
+var size = description.length
+var x = Math.floor(size*Math.random())
+document.getElementById('player').src=description[x];
+
+// audio
+audiojs.events.ready(function() {
+    var as = audiojs.createAll();
+  });  
+
+</script>    
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+html {  
+}
+
+body.main {
+    height: 100%;
+    width: 100%;
+    background: #e4616e;
+    background: -moz-linear-gradient(top,  #e4616e 0%, #b45571 37%, #4c2d4d 67%, #4c2d4d 67%, #181121 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #e4616e 0%,#b45571 37%,#4c2d4d 67%,#4c2d4d 67%,#181121 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #e4616e 0%,#b45571 37%,#4c2d4d 67%,#4c2d4d 67%,#181121 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4616e', endColorstr='#181121',GradientType=0 ); /* IE6-9 */ 
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    padding: 5%;
+    font-weight: bold;
+}
+
+.audiojs { 
+    margin: 0 auto;
+}
+
+.image_container {
+    text-align: center;
+    line-height: 500px;
+}
+
+.image_container img {
+    vertical-align: middle;
+}
+
+#img-border>img{
+    border: 5px solid #999;
+}
+
+#source {
+    text-align: center;
+    font-family: 'Times New Roman';
+    letter-spacing: 1px;
+    background-color: none;
+}
+
+#source a {
+    color: blue;
+}
+
+/*** source
+****************************** **/
+
+body.source {
+    background-color: #181818;
+}
+
+#list {
+    color: white;
+    font-size: 16px;
+    font-family: monospace;
+}
+
+#list h5, li {
+    margin: 0;
+}
+
+#list a {
+    color: blue;
+    text-decoration: none;
+}
